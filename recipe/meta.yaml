@@ -11,7 +11,7 @@ source:
   sha256: d4d43bacb46343b8c9dab54492af29054a9162551af42dc5c6a882c3801e14a5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yaqd-scpi-sensor = yaqd_scpi._scpi_sensor:SCPISensor.main
@@ -51,6 +51,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - brandon
+    - BrandonMehlenbacher
     - untzag
     - ksunden
