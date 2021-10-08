@@ -1,5 +1,5 @@
 {% set name = "yaqd-scpi" %}
-{% set version = "2021.3.0" %}
+{% set version = "2021.10.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yaqd-scpi-{{ version }}.tar.gz
-  sha256: d4d43bacb46343b8c9dab54492af29054a9162551af42dc5c6a882c3801e14a5
+  sha256: ddad2e05e4eb2a91525fc00f671936096030a8863125ee772a35b1cf7f82baed
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - yaqd-scpi-sensor = yaqd_scpi._scpi_sensor:SCPISensor.main
