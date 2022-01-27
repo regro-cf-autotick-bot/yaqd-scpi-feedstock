@@ -1,5 +1,5 @@
 {% set name = "yaqd-scpi" %}
-{% set version = "2021.10.0" %}
+{% set version = "2021.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yaqd-scpi-{{ version }}.tar.gz
-  sha256: ddad2e05e4eb2a91525fc00f671936096030a8863125ee772a35b1cf7f82baed
+  sha256: ecf4cc5b6144fc61d63f291b19046ff30109adbae3c524b0b1b7973fb85f0021
 
 build:
   number: 0
