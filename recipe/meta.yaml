@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yaqd-scpi-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/yaqd-scpi-{{ version }}.tar.gz
   sha256: ecf4cc5b6144fc61d63f291b19046ff30109adbae3c524b0b1b7973fb85f0021
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yaqd-scpi-sensor = yaqd_scpi._scpi_sensor:SCPISensor.main
@@ -22,10 +22,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - flit
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - pyvisa
     - pyvisa-py
     - yaqd-core >=2020.10.0
@@ -41,6 +41,7 @@ test:
     - yaqd-scpi-set-discrete --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://yaq.fyi
